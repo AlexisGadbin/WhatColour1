@@ -1,3 +1,31 @@
 <resources>
-    <string name="app_name">What colour</string>
+    <string name="app_name" translatable="false">What colour</string>
+    <string name="black">Black</string>
+    <string name="blue">Blue</string>
+    <string name="red">Red</string>
+    <string name="purple">Purple</string>
+    <string name="green">Green</string>
+    <string name="cyan" translatable="false">Cyan</string>
+    <string name="yellow">Yellow</string>
+    <string name="white">White</string>
+    <string name="orange" translatable="false">Orange</string>
+    <string name="pink">Pink</string>
+    <string name="brown">Brown</string>
+    <string name="grey">Grey</string>
+    <string name="instructions">With only one minute to complete the
+    task, see how many times you can correctly
+    choose the colour of the text
+    from only two choices. Sounds simple?
+    Careful, each incorrect guess provokes
+    a penalty!</string>
+    <string name="last_local_score_label">Last Score:</string>
+    <string name="best_local_score_label">Best Score (this device):</string>
+    <string name="play_game_button">Play the Game</string>
+    <string name="global_score_button">View Global Hish Scores</string>
+    <string name="time_left">Time Left:</string>
+    <string name="result" translatable="false">tick or cross</string>
+    <string name="users_choice">You selected %s</string>
+    <string name="correct_colour_name">Correct choice was %s</string>
+    <string name="sign_in">sign in</string>
+    <string name="sign_out">sign out</string>
 </resources>
