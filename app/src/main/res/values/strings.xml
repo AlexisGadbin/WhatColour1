@@ -21,7 +21,7 @@
     <string name="last_local_score_label">Last Score:</string>
     <string name="best_local_score_label">Best Score (this device):</string>
     <string name="play_game_button">Play the Game</string>
-    <string name="global_score_button">View Global Hish Scores</string>
+    <string name="global_score_button">View Global High Scores</string>
     <string name="time_left">Time Left:</string>
     <string name="result" translatable="false">tick or cross</string>
     <string name="users_choice">You selected %s</string>
