@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_time_left"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:indeterminate="false"
+        android:max="60"
+        android:progress="60"
+        android:progressDrawable="@drawable/progress_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_time_left"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="16dp"
+        android:text="59.9"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_time_left"
+        app:layout_constraintEnd_toStartOf="@+id/progress_time_left"
+        app:layout_constraintTop_toTopOf="@+id/progress_time_left" />
+
+    <TextView
+        android:id="@+id/txt_time_left_label"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/time_left"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_time_left"
+        app:layout_constraintEnd_toStartOf="@+id/txt_time_left"
+        app:layout_constraintTop_toTopOf="@+id/progress_time_left" />
+
+    <fr.eseo.e5e.ag.whatcolour.widgets.ColorTextView
+        android:id="@+id/canvas_mystery_colour"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_time_left" />
+
+
+
+    <Button
+        android:id="@+id/btn_one"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/grey"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_two"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/canvas_mystery_colour" />
+
+    <Button
+        android:id="@+id/btn_two"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/grey"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/btn_one"
+        app:layout_constraintTop_toBottomOf="@+id/canvas_mystery_colour" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_history"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_one" />
+</androidx.constraintlayout.widget.ConstraintLayout>
