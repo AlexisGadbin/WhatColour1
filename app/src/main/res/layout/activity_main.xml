@@ -43,7 +43,7 @@
 
     <TextView
         android:id="@+id/txt_local_last_score"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="27dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -65,7 +65,7 @@
 
     <TextView
         android:id="@+id/txt_local_best_score"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="27dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
