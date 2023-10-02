@@ -13,7 +13,7 @@
     <string name="instructions">Avec seulement une minute pour accomplir la tâche, voyez combien de fois vous pouvez choisir correctement la couleur du texte à partir de deux choix seulement. Cela vous semble simple ?     Attention, chaque mauvaise réponse entraîne une pénalité !</string>
     <string name="last_local_score_label">"Dernier score : "</string>
     <string name="best_local_score_label">"Meilleur score : "</string>
-    <string name="play_game_button">Jouer</string>
+    <string name="play_game_button">Jouer au jeu</string>
     <string name="global_score_button">Voir les meilleurs score</string>
     <string name="time_left">"Temps restant : "</string>
     <string name="users_choice">Vous avez sélectionné %s</string>

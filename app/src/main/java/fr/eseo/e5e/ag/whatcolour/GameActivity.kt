@@ -13,9 +13,14 @@ import java.text.DecimalFormat
 import java.util.Locale
 import java.util.Random
 
+const val END_TIME = "END_TIME"
+const val SCORE = "SCORE"
+
 class GameActivity : AppCompatActivity() {
     lateinit var binding : ActivityGameBinding
     lateinit var historyAdapter : HistoryAdapter
+
+
 
     val rand = Random()
     var mysteryColourIndex : Int = 0
@@ -111,5 +116,19 @@ class GameActivity : AppCompatActivity() {
         historyAdapter.notifyDataSetChanged()
         binding.recyclerHistory.smoothScrollToPosition(historyAdapter.itemCount)
         updateInterface()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putLong(END_TIME, timeLeft+System.currentTimeMillis())
+        outState.putInt(SCORE, score)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        val endTime = savedInstanceState.getLong(END_TIME)
+        timeLeft = endTime - System.currentTimeMillis()
+        timeOut?.cancel()
+        score = savedInstanceState.getInt(SCORE)
+        startTimer()
     }
 }
