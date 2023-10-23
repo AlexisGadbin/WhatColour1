@@ -12,6 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WhatColour"
         tools:targetApi="31">
+        <service
+            android:name=".NotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/yes"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/light_grey"/>
+
         <activity
             android:name=".GlobalScoresActivity"
             android:exported="false" />
